@@ -37,7 +37,7 @@ impl Contract {
     // Public method - accepts a greeting, such as "howdy", and records it
     pub fn set_greeting(&mut self, message: String) {
         // Use env::log to record logs permanently to the blockchain!
-        log!("Saving greeting {}", message);
+        log!("Saving new greeting {}", message);
         self.message = message;
     }
 }
