@@ -40,6 +40,7 @@ jobs:
         uses: aquiladev/ipfs-action@master
         with:
           path: frontend/dist
+          verbose: true
           port: 443
 
       - name: Deploy 🚀
