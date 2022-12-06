@@ -42,8 +42,8 @@ jobs:
         with:
           web3_token: ${{ secrets.WEB3_STORAGE_TOKEN }}
           path_to_add: 'frontend/dist'
-        - run: echo ${{ steps.web3.outputs.cid }}
-        - run: echo ${{ steps.web3.outputs.url }}
+      - run: echo ${{ steps.web3.outputs.cid }}
+      - run: echo ${{ steps.web3.outputs.url }}
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
