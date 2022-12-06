@@ -41,7 +41,7 @@ jobs:
         with:
           path: frontend/dist
           verbose: true
-          port: 443
+          host: 'dweb.link'
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
