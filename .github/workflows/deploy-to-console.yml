@@ -45,6 +45,13 @@ jobs:
       - run: echo ${{ steps.web3.outputs.cid }}
       - run: echo ${{ steps.web3.outputs.url }}
 
+      - name: Deploy to ipfs
+        uses: aquiladev/ipfs-action@master
+        with:
+          path: frontend/dist
+          verbose: true
+          host: 'ipfs.near.social'
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
